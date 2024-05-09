@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .card_1 {
+            width: 300px;
+            box-shadow: 0 0 22px rgba(0, 0, 0, 0.1);
+        }
+    
+        .card_2 {
+            padding: 10px;
+            width: 100%;
+        }
+    
+        .card_2 img {
+            width: 90%;
+            mix-blend-mode: multiply;
+        }
+    </style>
+  </head>
+  <body>
+    <body class="container-fluid">
+
+        <div>
+            <h1 class="text-center m-3 p-3" id = "demo">My Favourate Personalities</h1>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between w-100 ">
+            <div class=" card card_1  border border-3 rounded rounded-3 p-2 m-3 w-25 " id = "actor">
+                <div class=" card_2 d-flex justify-content-center align-content-center">
+                    <img src="./assets/suriya.jpg" alt="image1">
+                </div>
+                <div class="card-body">
+                    <p>Saravanan Sivakumar (born 23 July 1975), known by his stage name Suriya, is an Indian actor and film
+                        producer. He primarily works in Tamil cinema where he is one of the highest paid actors.He
+                        has received numerous awards including two National Film Awards,six Filmfare Awards South, five
+                        Tamil Nadu State Film Awards and two South Indian International Movie Awards.Suriya has featured six
+                        times in the Celebrity 100 list of Forbes India, which takes into account the earnings of Indian
+                        celebrities.</p>
+                </div>
+                <div class=" d-flex justify-content-center align-content-center p-2">
+                    <button class = "rounded-3 bg-primary" onclick="heroClick()">click me</button>
+                </div>
+    
+            </div>
+            <div class=" card card_1  border border-3 rounded rounded-3 p-2 m-3 w-25" id = "cricketer">
+                <div class=" card_2 w-100 d-flex justify-content-center align-content-center">
+                    <img src="./assets/msdhoni.jpg" alt="image1">
+                </div>
+                <div class="card-body">
+                    <p>Mahendra Singh Dhoni ( born 7 July 1981) is an Indian professional
+                        cricketer. He is a right handed batter and a wicket-keeper. Widely regarded as one of the most
+                        prolific wicket-keeper-batsmen and captains, he represented the Indian cricket team and was the
+                        captain of the side in limited-overs formats from 2007 to 2017 and in test cricket from 2008 to
+                        2014. Dhoni has captained the most international matches and is the most successful Indian captain.
+                        He has led India to victory in the 2011 Cricket World Cup, the 2007 ICC World Twenty20 and the 2013
+                        ICC Champions Trophy, the only captain to win three different limited overs tournaments. </p>
+                </div>
+                <div class=" d-flex justify-content-center align-content-center p-2">
+                    <button class = "rounded-3 bg-success" onclick="cricketerClick()">click me</button>
+                </div>
+    
+            </div>
+            <div class=" card card_1  border border-3 rounded rounded-3 p-2 m-3 w-25" id = "politician">
+                <div class=" card_2 w-100 d-flex justify-content-center align-content-center">
+                    <img src="./assets/modiji.jpg" alt="image1">
+                </div>
+                <div class="card-body">
+                    <p>Narendra Damodardas Modi (Gujarati:born 17 September 1950)[b] is
+                        an Indian politician who has served as the 14th prime minister of India since May 2014. Modi was the
+                        chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi. He is
+                        a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a right
+                        wing Hindu nationalist paramilitary volunteer organisation. He is the longest-serving prime minister
+                        from outside the Indian National Congress.</p>
+                </div>
+                <div class=" d-flex justify-content-center align-content-center p-2">
+                    <button  class = "rounded-3 bg-secondary "onclick="politicianClick()">click me</button>
+                </div>
+    
+            </div>
+        </div>
+    
+    <script>
+         let hero = document.getElementById("actor");
+         let cricketer = document.getElementById("cricketer");
+         let politician = document.getElementById("politician");
+       function heroClick(){
+        hero.style.backgroundColor = "lightblue";
+            document.getElementById("demo").style.color = "blue";
+        }
+        function cricketerClick(){
+            cricketer.style.backgroundColor = "yellow";
+            document.getElementById("demo").style.color = "yellow";
+        }
+        function politicianClick(){
+            politician.style.backgroundColor = "orange";
+            document.getElementById("demo").style.color = "orange";
+        }
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
